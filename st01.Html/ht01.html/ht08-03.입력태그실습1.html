@@ -5,14 +5,31 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <style>
-        label {  width: 100px; display: inline-block; }
+        label {
+            width: 100px;
+            display: inline-block;
+        }
     </style>
 </head>
 
 <body>
     <!-- fieldset & legend -->
     <!-- form 태그 필수 속성 추가. -->
-    <form>
+    <form action=" " method="GET">
+        <fieldset>
+            <legend>입력양식</legend>
+
+            <div>
+                <label for="a1">이름: </label> 
+                <input type="text" name value="" id="a1"> <br>
+               
+            </div>
+            <div>
+                <label for="a2">이메일:</label>
+                 <input type="text" name value="" id="a2"> <br>
+                <input type="submit" value="쿼리전송" >
+            </div>
+        </fieldset>
     </form>
 
 </body>
