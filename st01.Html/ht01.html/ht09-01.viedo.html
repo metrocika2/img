@@ -1,20 +1,47 @@
 ﻿<!DOCTYPE html>
 
 <html lang="ko">
+
 <head>
     <meta charset="utf-8">
     <title>비디오 재생하기</title>
     <style>
         body {
-            margin-top:20px;
-            margin-left:50px;
+            margin-top: 20px;
+            margin-left: 50px;
         }
     </style>
 </head>
+
 <body>
-    <h2>페인팅 동영상. Painting.mp4</h2>
+    <h2>페인팅 동영상. Painting.mp4
+        <video src="../media/Beach.mp4" controls></video>
+    </h2>
     <hr>
-    
+
     <h2>해변 동영상. Beach.mp4. 너비는 200px, 높이는 150px</h2>
+    <video src="../media/Painting.mp4" controls width="200px;" height="150px;"></video>
+    <hr>
+    <video src="../media/Painting.mp4" controls style="widows: 200px;" "height:150px;" ></video>
+    <hr>
+    <video src="../media/Painting.mp4" controls id="paint"></video>
+    <video src="../media/Painting.mp4" controls class="paint"></video>
+  
+    <style>
+               #beach{
+                   width: 200px;
+                   height: 150px             
+               }
+
+               .paint{
+                width: 200px;
+                height: 150px 
+
+               }
+    </style>
+
+
+
 </body>
+
 </html>
