@@ -3,12 +3,33 @@
 <head>
     <meta charset="utf-8">
     <title>폰트 CSS 속성</title>
+    <style>
+    p#font1 {font-family:serif,"맑은고딕";}
+    p#font2 {font-family: "나눔고딕","맑은고딕";}
+    .size1 {font-size:24px}
+    .size2 {font-size:200%}
+    .size3 {font-size:3em}
+
+    @import url( http://fonts.googleapis.com/earlyaccess/nanumbrushscript.css ); 
+    p#font3 {font-family:'Nanum Brush Script';}
+    
+    @font-face
+    {
+        src:url(http://cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.woff) format('woff');
+        font-family: NanumBarunGothicWebBold;
+    }
+    p#font5 {font-family:"NanumBarunGothicWebBold";} 
+    
+
+    </style>
 </head>
 <body>
     <pre>
 구글에서 "나눔고딕 폰트" 로 검색로 후 설치 
 구글에서 "웹 무료 폰트" 로 검색 'http://cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.woff' 
     </pre>
+
+
 
     <h2>내부 폰트를 사용하는 텍스트 !!!</h2>
     <p> serif font 적용 전: serif font를 이용하여 폰트를 적용한 텍스트 !!! </p>
