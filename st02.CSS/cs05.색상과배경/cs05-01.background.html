@@ -3,6 +3,50 @@
 <head>
     <meta charset="utf-8">
     <title>배경 이미지</title>
+    <style>
+        /*css초기화*/
+    *{margin: 0; padding: 0}
+    
+    /*바디태그에 배경이미지 설정: 백그라운드 이미지,리피트사용*/
+    body{background-image: url(../images/bg1.png);
+        background-repeat: no-repeat;
+        background-repeat: repeat-x;
+        background-repeat: repeat-y;
+        background-repeat: repeat;
+    }
+
+    div#color{background-color: aqua;}
+    div#color>div{border: 1px solid black; background-color: white;
+    margin: 50px 0px 0px 0px;}
+
+    /*백그라운드 클립*/
+    
+    div#clip{background-image: url(../images/bg1.png);} 
+    div#clip>div{width:200px; border: dotted 5px black; background-color: aqua; float: left; padding: 20px; margin: 20px; }
+
+    #clip>div.bg1{background-clip: border-box;}
+    #clip>div.bg2{background-clip: padding-box; }         
+    #clip>div.bg3{background-clip: content-box;}
+
+    div#origin{clear: both;}
+
+    div#origin{background-image: url(../images/bg5.png);} 
+    div#origin{width:200px; border: dotted 5px black;  float: left; padding: 20px; margin: 20px; }
+    
+
+    div#position{clear: both;}
+    
+
+    div#position>div{height: 150px; padding-top: 150px; padding-bottom: 20px; margin-top:10px; background-image: url(../images/bg2.jpg);background-repeat: no-repeat}
+
+    #position>div.bg1{background-position: left top;}
+    #position>div.bg2{background-position: center;}
+    #position>div.bg3{background-position: bottom;}
+
+    div#size{clear: both;}
+
+
+    </style>
 </head>
 <body>
 
@@ -129,4 +173,4 @@
         <div class="bg6">배경 이미지 사이즈 : 100% 100%</div>
     </div>
 </body>
-</html>
+</html>

@@ -5,25 +5,32 @@
     <title>박스모델</title>
     <style>
       *{margin: 0; padding: 0;}
-      div>.box1,.box2,.box3,.box4,.box5{width: 200px; height: 100px; 
-      background-color: gray; float:left; margin: 20px;
-      border: 1px, solid,black;}    
+
+      /*z클래스 속성으로 한번에 찾가*/
+
+      div>div{width: 200px; height: 100px; 
+      background-color:white; float:left; margin: 20px;
+      border: 1px solid black;}
+
+      div#borderstyle::after,div#bordercolor::after,div#borderwidth::after{clear: both; display:block; content:'';}  
+
       
-      #borderstyle>.box1{border: solid;} 
-      #borderstyle>.box2{border: dotted;}
-      #borderstyle>.box3{border: dashed;}
+      div#borderstyle>.box1{border-style: solid;} 
+      div#borderstyle>.box2{border-style: dotted;}
+      div#borderstyle>.box3{border-style: dashed;}
+      div#borderstyle>.box4{border-style: solid  dotted dashed double;}
      
 
-      #bordercolor{clear:both;}
-      #bordercolor>.box1{border: dotted; color: red}
-      #bordercolor>.box2{border: dotted; color:blue} 
-      #bordercolor>.box3{border: dotted; color: red,blue}
-      #bordercolor>.box4{border: dotted; color: black,red,blue,yellow} 
+      div#bordercolor>.box1{border: dotted; color:red}
+      div#bordercolor>.box2{border: dotted; color:blue} 
+      div#bordercolor>.box3{border: dotted; border-top-color: red;border-right-color: blue;border-bottom-color: red; 
+      border-left-color: blue; }
+      div#bordercolor>.box4{border: dotted;  border-color:black red blue yellow;} 
 
 
-      #borderwidth{clear:both;}
-      #borderwidth>.box1{border:2px,black, }
-      #borderwidth>.box2{bore}
+      div#borderwidth>.box1{border-width: 2px;}
+      div#borderwidth>.box2{border-width:5px 10px;}
+      div#borderwidth>.box3{border-width:5px 10px 30px 50px}
 
 
     </style>

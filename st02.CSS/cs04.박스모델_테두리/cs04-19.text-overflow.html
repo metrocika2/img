@@ -2,6 +2,18 @@
 <html>
 <head>
     <title>text-overflow</title>
+    <style>
+    div.a{width:100px; border:2px solid green;
+    /*줄바꿈안되게 설정*/
+    white-space: nowrap;
+    /*테그벗어나는 영역감추기*/
+    overflow:hidden;
+    /*텍스트축약*/
+    text-overflow: ellipsis;}
+    /*마우스올렸을때 내용보이기*/
+    div.a:hover{white-space:normal; width: 250px;}
+
+    </style>
 </head>
 <body>
     <h1>The text-overflow</h1>
