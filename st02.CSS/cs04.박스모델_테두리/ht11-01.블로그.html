@@ -6,36 +6,31 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <style>
-        #mene {
-            list-style-type: none;
-            float: left
-        }
 
-        .menebar {
-            display: inline-block;
-        }
+     *{margin:0; padding: 0; }
+        
+       html{background-color: lightgrey;  padding:50px;}  
+       body{border: white 1px solid; width: 960px; height:auto; border-radius:10px;  padding:50px; margin:auto; background-color:white;}
+        
+        #mene{list-style-type: none; display:inline-block; height:40px; width: 400px; }
 
-        #search {
-            float: right;
-        }
+        .menebar{display: inline-block; float:left; padding: 9px 0 0 0; }
+        #mene>.menebar{padding: 9px 30px 0 0;}
 
-        .category {
-            float: right;
-            width: 50%;
-        }
+        #search{float: right; clear: both;}
 
-        section {
-            float: left;
-            width: 50%;
-        }
+        .category{float: right; width: 20%; list-style: none; text-align: center; padding: 0px 10px 0px 0px;}
+        
+        section {float: left; width: 75%; clear: both; }
+         
+        a{text-decoration:none;}  
 
-        footer {
-            clear: both;
-        }
+       #search>input.listone{border: 1px solid gray; border-radius: 20px 0px 0px 20px; width: 200px; height: 28px; text-indent: 10px; float: left; margin: 5px 0 0 0;}
+       #search>input.listtwo{border: 1px solid gray; border-radius: 0px 20px 20px 0px; width: 50px; height: 28px; text-indent: 10px; float: left; text-align: center; 
+       padding:0px 50px 0px 0px; margin: 0px 20px 0px 0px; margin: 5px 0 0 0; }
+      
+       div#wrap::after{display: block; content: ""; clear: both;}
 
-        #wrap {
-            clear: both;
-        }
     </style>
 </head>
 
@@ -43,30 +38,34 @@
 <body>
     <header>
         <p>
-            <h2>Example Preview</h2>
-            <h4>한빛아카데미</h4>
+            <h2>HTML5 Example Preview</h2>
+            <h5>한빛아카데미</h5><br>
         </p>
     </header>
 
     <nav>
-        <ul id="mene">
+        <hr>
+         <ul id="mene">
             <li class="menebar">HTML5</li>
             <li class="menebar">CSS3</li>
-            <li class="menebar">JavaScript</li>
+            <li class="menebar">JavaScript</li><br>
 
-        </ul>
+         </ul>
+        
+       
 
-        <form id="search" action="" method="get">
-            <input type="text">
-            <input type="submit" value="검색">
+        <form id="search" action="" method="get" >
+            <input type="text" class="listone">
+            <input type="submit" value="검색" class="listtwo">
         </form>
+        <hr>
     </nav>
 
     <div id="wrap">
         <section class="memo">
             <p>
-                <h2>HTML5 개요와 활용</h2>
-                <h5>2013년 02월 14일</h5>
+                <br><h2>HTML5 개요와 활용</h2><br>
+                <h5>2013년 02월 14일</h5><br>
             </p>
 
             <img src="http://placehold.it/430x280" alt="이미지">
@@ -75,7 +74,7 @@
 
 
             <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent commodo justo ac lorem pretium vitae
+                    <br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent commodo justo ac lorem pretium vitae
                 rhoncus
                 lectus ullamcorper. Aliquam facilisis euismod diam sollicitudin commodo. Nunc sagittis sapien venenatis
                 lorem
@@ -94,7 +93,7 @@
                 fermentum tellus at justo iaculis eu tempus lorem venenatis. Suspendisse quis eros consectetur tellus
                 posuere
                 commodo. In hac habitasse platea dictumst.
-            </p>
+            </p><br>
             <p>
                 Praesent orci quam, ornare sed scelerisque ac, porta a justo. Pellentesque quis magna sed magna vehicula
                 semper
@@ -113,7 +112,7 @@
         </section>
 
         <aside class="category">
-            <h2>카테고리 </h2>
+            <br><h2>카테고리 </h2>
             <p>
 
                 <li>
@@ -143,7 +142,7 @@
                 </li>
 
 
-            </p>
+            </p><br>
 
 
 
@@ -181,6 +180,7 @@
     </div>
 
     <footer>
+        <br><hr>
         <a href="">Created By Team-HeXagon</a>
     </footer>
 

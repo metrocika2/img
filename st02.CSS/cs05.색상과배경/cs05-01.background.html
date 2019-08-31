@@ -28,22 +28,37 @@
     #clip>div.bg2{background-clip: padding-box; }         
     #clip>div.bg3{background-clip: content-box;}
 
-    div#origin{clear: both;}
+    div#clip::after {clear: both; display: block; content:""; }
 
-    div#origin{background-image: url(../images/bg5.png);} 
-    div#origin{width:200px; border: dotted 5px black;  float: left; padding: 20px; margin: 20px; }
+    div#origin{}
+    
+    
+    div#origin>div{background-image: url(../images/bg5.png);width:200px; border: dotted 5px black;  float: left; padding: 20px; margin: 20px; background-repeat: no-repeat }
+    #origin>div.bg1{background-origin: border-box;}
+    #origin>div.bg2{background-origin: padding-box; }         
+    #origin>div.bg3{background-origin: content-box;}
     
 
-    div#position{clear: both;}
+    div#position::after {clear: both; display: block; content:""; }
     
 
     div#position>div{height: 150px; padding-top: 150px; padding-bottom: 20px; margin-top:10px; background-image: url(../images/bg2.jpg);background-repeat: no-repeat}
 
     #position>div.bg1{background-position: left top;}
-    #position>div.bg2{background-position: center;}
-    #position>div.bg3{background-position: bottom;}
+    #position>div.bg2{background-position: left center;}
+    #position>div.bg3{background-position: left bottom;}
 
-    div#size{clear: both;}
+    div#size{background: white}
+
+    #size>div{width: 300px; height: 300px; border: 1px solid  #000000; background-image: url(../images/bg4.jpg); float: left; background-repeat:no-repeat; }
+    #size>div.bg1{background-size: auto;}     
+    #size>div.bg2{background-size: 200px 150px;}
+    #size>div.bg3{background-size: 60% 40%;}      
+    #size>div.bg4{background-size: contain;}
+    #size>div.bg5{background-size: cover;}       
+    #size>div.bg6{background-size: 100% 100%;} 
+
+    ::after {clear: both; display: block; content:""; }
 
 
     </style>
