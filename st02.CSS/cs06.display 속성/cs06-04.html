@@ -3,6 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <title>display 속성</title>
+    <style>
+    *{margin: 0; padding: 0;}
+    ul>li{display: inline-block; background-color: red; width: 100px; height: 50px; text-align: center;  line-height: 50px; margin: 0 0 0 -6px;}
+
+    li:nth-child(even) {background-color:green;}
+    li:nth-child(odd) {background-color:red;}
+
+    li:first-child {border-top-left-radius: 10px;border-bottom-left-radius: 10px; margin: 0 0 0 6px ;}
+    li:last-child {border-top-right-radius: 10px;border-bottom-right-radius: 10px;}
+
+    </style>
 </head>
 <body>
     <ul>

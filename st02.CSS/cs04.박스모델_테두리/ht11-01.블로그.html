@@ -17,6 +17,7 @@
         .menebar{display: inline-block; float:left; padding: 9px 0 0 0; }
         #mene>.menebar{padding: 9px 30px 0 0;}
 
+
         #search{float: right; clear: both;}
 
         .category{float: right; width: 20%; list-style: none; text-align: center; padding: 0px 10px 0px 0px;}
@@ -30,6 +31,10 @@
        padding:0px 50px 0px 0px; margin: 0px 20px 0px 0px; margin: 5px 0 0 0; }
       
        div#wrap::after{display: block; content: ""; clear: both;}
+       
+       
+   
+      
 
     </style>
 </head>
@@ -46,11 +51,20 @@
     <nav>
         <hr>
          <ul id="mene">
-            <li class="menebar">HTML5</li>
+             
+            <li class="menebar">HTML5
+                    <ul class="inner-menu">
+                            <li class="inner-menu"><a href="#">데이터</a></li>
+                            <li class="inner-menu"><a href="#">데이터</a></li>
+               
+                   </ul>
+            </li>
             <li class="menebar">CSS3</li>
             <li class="menebar">JavaScript</li><br>
 
          </ul>
+
+         
         
        
 

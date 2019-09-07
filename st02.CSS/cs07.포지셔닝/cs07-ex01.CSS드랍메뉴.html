@@ -4,7 +4,26 @@
     <meta charset="UTF-8">
     <title>자식>자식>자식></title>
     <style>
+    *{padding: 0; margin: 0;}
+
+    
+     ul,li{list-style-type: none; text-align: center;}
+     a{text-decoration: none;}
+     body>div{float: left; margin:50px 300px 0 10px; }
+     body::after{clear: both; display: block; content: "";}
+     ul>li{background-color:white;  width: 100px;}
+
+     ul#menu2>li{float: left;border: 1px gray solid; margin: 10px; }
+     ul#menu2::after{clear: both; display: block;content: "";}
+     ul#menu2>li>ul{display: none; }
+
+     ul#menu2>li:hover>ul{display:block; }
+     ul#menu2>li>ul>li{border-top: 1px gray solid;}
+
+
     </style>
+
+    <link rel="stylesheet" href="./dropmenu.css">
 </head>
 <body>
     <div>

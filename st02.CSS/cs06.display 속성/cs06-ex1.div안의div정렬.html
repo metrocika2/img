@@ -3,13 +3,19 @@
 <head>
     <meta charset="utf-8">
     <title>div 안에 div 가운데 정렬</title>
+    <style>
+    *{margin: 0; padding: 0;}
+     div.p{ width: 400px; height: 200px; border: 1px solid red;}
+     div.c{width: 200px; height: 100px; border: 1px solid red; line-height: 100px;}
+
+    </style>
 </head>
 <body>
     <h1> 수평 가운데 정렬 </h1>
 
     <h2>margin: auto </h2>
     <div class="p" style="text-align:center;">
-        <div class="c" style="margin: auto; ">
+        <div class="c" style="margin: auto;margin-top: 50px;">
             test
         </div>
     </div>
@@ -17,7 +23,7 @@
 	
     <h2>display:inline-block; </h2>
     <div class="p" style="text-align:center;">
-        <div class="c" style="display:inline-block;  ">
+        <div class="c" style="display: inline-block;" >
             test
         </div>
     </div>
@@ -25,7 +31,7 @@
 	
     <h2>display: flex; align-items: center; </h2>
     <div class="p" style="display: flex; align-items:center;">
-        <div class="c" >
+        <div class="c" style="display:flex; text-align: center;">
             test
         </div>
     </div>
@@ -39,4 +45,4 @@
         </div>
     </div>
 </body>
-</html>
+</html>
